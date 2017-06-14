@@ -33,7 +33,7 @@ ifeq (${fp}, 1)
 CFLAGS := ${CFLAGS} -fno-omit-frame-pointer
 endif
 
-CXXFLAGS = ${CFLAGS} -fno-omit-frame-pointer
+CXXFLAGS = ${CFLAGS} -fno-omit-frame-pointer -std=gnu++11
 
 DFLAGS = -M
 LDFLAGS = ${MF} -ggdb -rdynamic ${PROF} -lm -lrt -lcrypto -lz -lpthread
